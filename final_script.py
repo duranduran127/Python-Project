@@ -41,5 +41,5 @@ arcpy.AddField_management(table_dbf, "Acres", "DOUBLE", "", "", "", "", "NULLABL
 # Process: Calculate Field (2)
 arcpy.CalculateField_management(table_dbf__2_, "Acres", "!Count! *30 *30 *0.000247105", "PYTHON_9.3", "")
 
-print ("It is done, it is finished...")
+print ("It is done")
 
