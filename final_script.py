@@ -28,3 +28,18 @@ glut_lc_2008_img__2_ = glut_lc_2008_img
 table_dbf = "C:\\Users\\bpdura7983\\Desktop\\table.dbf"
 table_dbf__2_ = table_dbf
 table_dbf__3_ = table_dbf__2_
+
+# Process: Build Raster Attribute Table
+arcpy.BuildRasterAttributeTable_management(glut_lc_2008_img, "NONE")
+
+# Process: Summary Statistics
+arcpy.Statistics_analysis(glut_lc_2008_img__2_, table_dbf, "OID FIRST", "Value;Count")
+
+# Process: Add Field
+arcpy.AddField_management(table_dbf, "Acres", "DOUBLE", "", "", "", "", "NULLABLE", "NON_REQUIRED", "")
+
+# Process: Calculate Field (2)
+arcpy.CalculateField_management(table_dbf__2_, "Acres", "!Count! *30 *30 *0.000247105", "PYTHON_9.3", "")
+
+print ("It is done, it is finished...")
+
