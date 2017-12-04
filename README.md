@@ -14,7 +14,7 @@ not the pixel density but the acreage of the pixels to get a better idea of the 
 
 
 
-How I did it: 
+#How I did it: 
 first i built a model that would be the base of my code. The model included code that built an attribute table for 
 my raster file, a summary statistic, and add field which added the acerage field, and a calculate field which converted 
 the pixels to acres. After the model was built i was able to export it to a python script and begin adding my code to it. 
