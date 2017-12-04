@@ -1,5 +1,5 @@
 # Python-Project
-# This Python sctipt will take the given pixel area of a raster and convert it to acerage. 
+# This Python script will take the given pixel area of a raster and convert it to acerage. 
 
 # How it works:
 The idea of this project is to take a certain areas Land use data and give exactly how much acerage there is in the 
