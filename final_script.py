@@ -9,4 +9,9 @@
 # Import arcpy module
 import arcpy
 
+# Local variables:
+glut_lc_2008_img = "C:\\Users\\bpdura7983\\Desktop\\glut_lc_2008.img"
+glut_lc_2008_img__2_ = glut_lc_2008_img
 
+# Process: Build Raster Attribute Table
+arcpy.BuildRasterAttributeTable_management(glut_lc_2008_img, "NONE")
