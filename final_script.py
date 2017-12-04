@@ -15,3 +15,16 @@ glut_lc_2008_img__2_ = glut_lc_2008_img
 
 # Process: Build Raster Attribute Table
 arcpy.BuildRasterAttributeTable_management(glut_lc_2008_img, "NONE")
+
+# tool variables
+in_table="Pixel Count "
+out_csv_file="Pixel_Acres"
+in_delimiter="COMMA"
+
+# Local variables:
+Output_Feature_Class__2_ = ""
+
+glut_lc_2008_img__2_ = glut_lc_2008_img
+table_dbf = "C:\\Users\\bpdura7983\\Desktop\\table.dbf"
+table_dbf__2_ = table_dbf
+table_dbf__3_ = table_dbf__2_
