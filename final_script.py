@@ -6,11 +6,16 @@
 # Description: 
 # ---------------------------------------------------------------------------
 
+""" This function takes a raster image and the pixel count in that image and converts it to acerage..."""
 # Import arcpy module
 import arcpy
 
+from Tkinter import Tk
+from  tkFileDialog import askopenfilename
+
+Tk().withdraw()
 # Local variables:
-glut_lc_2008_img = "C:\\Users\\bpdura7983\\Desktop\\glut_lc_2008.img"
+glut_lc_2008_img = askopenfilename()
 glut_lc_2008_img__2_ = glut_lc_2008_img
 
 # Process: Build Raster Attribute Table
@@ -41,5 +46,7 @@ arcpy.AddField_management(table_dbf, "Acres", "DOUBLE", "", "", "", "", "NULLABL
 # Process: Calculate Field (2)
 arcpy.CalculateField_management(table_dbf__2_, "Acres", "!Count! *30 *30 *0.000247105", "PYTHON_9.3", "")
 
-print ("It is done")
+
+print ("It is done, it is finished...")
+
 
