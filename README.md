@@ -1,4 +1,5 @@
-# Python-Project
+# Python-Project 
+Prepared by: Payton Duran
 # This Python sctipt will take the given pixel area of a raster and convert it to acerage. 
 
 # How it works:
